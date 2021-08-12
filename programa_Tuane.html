@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    function exibeAlerta(msg){
+        alert("***" + msg + "***");
+    }
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostrarParagrafo(paragrafo){
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    var minhaIdade = 24;
+    var idadeIrmao = 26;
+    var totalIdades = minhaIdade + idadeIrmao;
+    var mediaIdades = totalIdades/2;
+    var diferenca = minhaIdade - idadeIrmao;
+    
+    exibeAlerta("Total de idades é " + totalIdades);
+    exibeAlerta("A média das idades é " +  mediaIdades);
+      
+    mostrarParagrafo(`Nossa diferença de idade é de ${Math.abs(diferenca)} anos.`);
+
+
+
+</script>
